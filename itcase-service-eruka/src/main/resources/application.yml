@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: itcase-eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+  server:
+    eviction-interval-timer-in-ms: 1000 #扫描失效服务的间隔时间，失效剔除时间
+    enable-self-preservation: false #关闭自我保护机制
